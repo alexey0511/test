@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/tmp/funnel-input_base_path-NBP0KEBr.tmp/0/helpers/ember-power-select-option-classes.js

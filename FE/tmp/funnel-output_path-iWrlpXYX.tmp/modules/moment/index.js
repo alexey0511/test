@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/tmp/funnel-input_base_path-2R3fzChW.tmp/0/index.js

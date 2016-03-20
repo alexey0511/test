@@ -1,0 +1,63 @@
+
+<h1>Haircuts</h1>
+<div class='ui grid'>
+  <div class="row">
+    <div class='column'>
+      <label>Start date:</label>
+      <div class="ui input">
+        {{date-picker date=startDateFilter valueFormat='date' class="ui input" format='DD MMMM YYYY'}}
+      </div>
+      <label> End date:</label>
+      <div class="ui input">
+        {{date-picker date=endDateFilterInitial valueFormat='date' format='DD MMMM YYYY'}}
+      </div>
+  </div>
+  </div>
+</div>
+<table class="ui selectable striped celled table">
+  <thead>
+    <tr>
+      <th class="two wide">Date</th>
+      <th class="three wide">Client</th>
+      <th class="two wide">Barber</th>
+      <th class="two wide">Haircut</th>
+      <th class="center aligned one wide">Price</th>
+      <th class="one wide">Payment</th>
+      <th class="center aligned one wide">#</th>
+      <th class="one wide">Location</th>
+      <th class="one wide"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="warning">
+      <td class='disabled'></td>
+      <td></td>
+      <td>
+        <div class="ui transparent fluid icon input">
+          {{input type="text" placeholder="Search by barber..." value=barberFilter}}
+          <i class="search icon"></i>
+        </div>
+      </td>
+      <td></td>
+      <td></td>
+      <td>
+        <div class="ui transparent fluid icon input">
+          {{input type="text" placeholder="Search by payment..." value=paymentFilter}}>
+          <i class="search icon"></i>
+        </div>
+      </td>
+      <td> </td>
+      <td>
+        <div class="ui transparent fluid icon input">
+          {{input type="text" placeholder="Search by location..." value=locationFilter}}>
+          <i class="search icon"></i>
+        </div>
+      </td>
+      <td></td>
+    </tr>
+    {{#each filteredModel as |lineItem|}}
+      {{haircuts/haircut-list-row-component model=lineItem
+        isAdmin=isAdmin openRecord=(action 'openRecord') userCanEdit=userCanEdit}}
+    {{/each}}
+  </tbody>
+</table>

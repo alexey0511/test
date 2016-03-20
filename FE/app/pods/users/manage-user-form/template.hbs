@@ -1,0 +1,53 @@
+{{confirmation-modal
+  title="Delete a user"
+  message="Please confirm that you want to delete a user"
+}}
+
+<h1>Manage {{modelName}} list</h1>
+
+<table class="ui celled table">
+  <thead>
+    {{#each attributes as |header|}}
+      <th>{{header}}</th>
+    {{/each}}
+    <th></th>
+  </thead>
+  <tbody>
+    {{#each model as |item|}}
+      {{#if (boolean-or item.isNew item.isActive)}}
+        <tr>
+          <td><div class="ui fluid input">{{input value=item.name}}</div></td>
+          <td><div class="ui fluid input">{{input value=item.password}}</div></td>
+          <td>
+            {{#power-select options=userRoles selected=item.role
+              onchange=(action (mut item.role))  as |role| }}
+              {{role}}
+            {{/power-select}}
+          </td>
+          <td><div class="ui fluid input">{{input value=item.location}}</div></td>
+          <td>
+            <button class="ui green tiny button" {{action 'saveItem' item}}>SAVE</button>
+            <button class="ui red tiny button" {{action 'deleteItem' item}}>DELETE</button>
+          </td>
+       </tr>
+      {{else}}
+       <tr>
+          <td>{{item.name}}</td>
+          <td>***********</td>
+          <td>
+              {{item.role}}
+          </td>
+          <td>{{item.location}}</td>
+          <td>
+            <button class="ui grey tiny button" {{action 'editItem' item}}>EDIT</button>
+            <button class="ui red tiny button" {{action 'deleteItem' item}}>DELETE</button>
+          </td>
+        </tr>
+      {{/if}}
+    {{/each}}
+    <tr>
+      <td colspan="5"><button class="ui green button" disabled={{disableAddButton}} {{action 'addItem'}}>ADD</button></td>
+    </tr>
+  </tbody>
+  <tfoot> </tfoot>
+</table>

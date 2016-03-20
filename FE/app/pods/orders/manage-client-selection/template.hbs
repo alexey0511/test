@@ -1,0 +1,67 @@
+  <div class="sides">
+    <div class="active main side selection-box">
+      {{item-selection
+        items=clientOptionsList
+        optionLabelPath="label"
+        onchange=(action 'openNextSide')
+        }}
+      </div>
+    <div class="select-client side selection-box">
+      <div class='ui segment'>
+        {{orders/select-client
+          clients=clients
+          onSelectClient=(action 'selectClient')
+        }}
+        <div class="ui divider"></div>
+        <div class="ui link button" {{action 'openNextSide' 'init'}}> Back</div>
+      </div>
+    </div>
+
+    <div class="display-client side selection-box">
+      <div class="ui segment" >
+        {{#if model.client}}
+          <div class="ui celled grid">
+            <div class="row">
+              <div class="six wide right aligned column"><b>Name: </b></div>
+              <div class="ten wide center aligned column">
+                  {{model.clientName}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="six wide right aligned column"><b>Haircuts: </b></div>
+              <div class="ten wide center aligned column">{{model.client.progress}}</div>
+            </div>
+          </div>
+        {{else}}
+          <div class="ui celled grid">
+            <div class="row">
+              <div class="six wide right aligned column"><b>Name: </b></div>
+              <div class="ten wide center aligned column">
+                  Casual Customer
+              </div>
+            </div>
+            <div class="row">
+              <div class="six wide right aligned column"><b>Haircuts: </b></div>
+              <div class="ten wide center aligned column">0</div>
+            </div>
+          </div>
+        {{/if}}
+
+        <div class="ui divider"></div>
+        <div class="ui link button" {{action 'openNextSide' 'init'}}> Back</div>
+
+      </div>
+
+    </div>
+
+    <div class="new-client side selection-box">
+      <div class='ui segment'>
+        {{orders/small-client-new-form
+          onCreateClient=(action 'createNewClient')
+        }}
+        <div class="ui divider"></div>
+        <div class="ui link button" {{action 'openNextSide' 'init'}}> Back</div>
+      </div>
+    </div>
+
+  </div>

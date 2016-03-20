@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/tmp/broccoli_merge_trees-input_base_path-vOLzoG9K.tmp/23/modules/ember-getowner-polyfill/fake-owner.js

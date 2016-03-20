@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/tmp/broccoli_merge_trees-input_base_path-h0BkcqAy.tmp/27/helpers/start-app.js

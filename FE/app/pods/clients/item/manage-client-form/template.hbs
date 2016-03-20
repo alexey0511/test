@@ -1,0 +1,60 @@
+<div class="ui grid">
+  <div class="equal height row">
+    <div class="eight wide column">
+      <img class="ui middle aligned image" src="assets/images/profile_placeholder.png">
+      <div>
+        {{file-upload url="#"}}
+      </div>
+    </div>
+    <div class="eight wide column">
+      {{#ui-form validation=validation submit=(action 'submit') id="clientForm"}}
+        <div class="field">
+          <label>First Name</label>
+          {{input type="text" name="first-name" placeholder = "First Name" value=model.firstName}}
+        </div>
+        <div class="required field">
+          <label>Last Name</label>
+          {{input type="text" name="last-name" placeholder = "Last Name" value=model.lastName}}
+        </div>
+        <div class="field">
+          <label>Email</label>
+          {{input type="text" name="email" placeholder="Email" value=model.email}}
+        </div>
+        <div class="field">
+          <label>Mobile phone</label>
+          {{input type="text" name="phone1" placeholder="Mobile phone" value=model.phone1}}
+        </div>
+        <div class="field">
+          <label>Home phone</label>
+          {{input type="text" name="phone2" placeholder="Home phone" value=model.phone2}}
+        </div>
+        <div class="field">
+          <label>Card No</label>
+          {{input type="text" name="card-number" placeholder="No" value=model.token}}
+        </div>
+        <button class="ui orange button">Save changes</button>
+      {{/ui-form}}
+    </div>
+  </div>
+</div>
+
+<div class="ui horizontal divider"> Haircuts</div>
+
+<div>
+  <table class="ui selectable striped celled table">
+    <thead>
+      <tr>
+        <th class="six wide">Date</th>
+        <th class="six wide">Paid</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each clientHaircuts as |cut|}}
+      <tr>
+        <td>{{moment-format cut.itemDate 'DD MMMM YYYY'}}</td>
+        <td> $ {{cut.itemPrice}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

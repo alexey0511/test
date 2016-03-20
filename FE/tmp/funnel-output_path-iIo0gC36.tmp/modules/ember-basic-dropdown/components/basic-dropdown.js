@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/tmp/funnel-input_base_path-lYlk19Wc.tmp/0/components/basic-dropdown.js

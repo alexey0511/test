@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/app/pods/products/manage-product-form/component.js

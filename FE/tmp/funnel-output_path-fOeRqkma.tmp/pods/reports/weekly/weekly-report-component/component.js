@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/tmp/funnel-input_base_path-Pqr2Mxfp.tmp/0/pods/reports/weekly/weekly-report-component/component.js

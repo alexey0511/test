@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/app/pods/order/select-client/component.js

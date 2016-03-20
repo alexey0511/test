@@ -1,0 +1,28 @@
+{{#ui-form validation=validation id="newClientForm" submit=(action 'submit')}}
+  <div class="field">
+    <label>First Name</label>
+    {{input type="text" name="first-name" placeholder = "First Name" value=model.firstName}}
+  </div>
+  <div class="required field">
+    <label>Last Name</label>
+    {{input type="text" name="last-name" placeholder = "Last Name" value=model.lastName}}
+  </div>
+  <div class="field">
+    <label>Email</label>
+    {{input type="text" name="email" placeholder="Email" value=model.email}}
+  </div>
+  <div class="field">
+    <label>Mobile phone</label>
+    {{input type="text" name="phone1" placeholder="Mobile phone" value=model.phone1}}
+  </div>
+  <div class="field">
+    <label>Home phone</label>
+    {{input type="text" name="phone2" placeholder="Home phone" value=model.phone2}}
+  </div>
+  <div class="field">
+    <label>Card No</label>
+    {{input type="text" name="card-number" placeholder="No" value=model.token}}
+  </div>
+  <button class="ui orange button">Submit</button>
+  <button class="ui reset button">Reset</button>
+{{/ui-form}}

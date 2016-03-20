@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/tmp/funnel-input_base_path-UthuW20a.tmp/0/initializer-factory.js

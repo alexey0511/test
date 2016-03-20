@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/app/pods/sell/small-client-new-form/component.js

@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/app/pods/haircut/item/manage-haircut-form/component.js

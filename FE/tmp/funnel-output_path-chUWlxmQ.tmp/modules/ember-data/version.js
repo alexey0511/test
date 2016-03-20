@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/tmp/creator-output_path-VdgjZl1D.tmp/version.js

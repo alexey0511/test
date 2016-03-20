@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/app/pods/clients/item/route.js

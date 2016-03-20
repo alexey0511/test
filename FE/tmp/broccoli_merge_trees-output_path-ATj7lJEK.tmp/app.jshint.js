@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/tmp/broccoli_merge_trees-input_base_path-kJa1ASH7.tmp/0/app.jshint.js

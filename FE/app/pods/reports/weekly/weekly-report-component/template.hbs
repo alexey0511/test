@@ -1,0 +1,10 @@
+<div class="ui center aligned  grid">
+  <div class="row">
+    <div class="sixteen wide column">
+      <i class="chevron circle left link big icon" {{action 'goToPreviousWeek'}}></i>
+      {{moment-format startDate 'DD/MM/YYYY'}} - {{moment-format endDate 'DD/MM/YYYY'}}
+      <i class="chevron circle right link big icon" {{action 'goToNextWeek'}}></i>
+    </div>
+  </div>
+  {{outlet}}
+</div>

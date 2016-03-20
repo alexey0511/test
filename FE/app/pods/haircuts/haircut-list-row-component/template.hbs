@@ -1,0 +1,13 @@
+<td>{{moment-format model.itemDate 'DD MMMM YYYY HH:MM'}}</td>
+<td>{{model.itemClient.fullName}}</td>
+<td>{{model.barber.name}}</td>
+<td>{{model.product.name}}</td>
+<td class="center aligned">{{format-currency model.itemPrice}}</td>
+<td>{{model.itemPaymentType}}</td>
+<td class="center aligned">{{model.order.id}}</td>
+<td>{{model.itemUser.location}}</td>
+<td>
+  {{#if adminUser}}
+    <button class="ui button" {{action 'openRecord' model}}>Open</button>
+  {{/if}}
+</td>

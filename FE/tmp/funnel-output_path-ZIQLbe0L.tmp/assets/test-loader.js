@@ -1,0 +1,1 @@
+/home/alexey/projects/groomClients-ember/tmp/funnel-input_base_path-9exuRtws.tmp/0/bower_components/ember-cli-test-loader/test-loader.js

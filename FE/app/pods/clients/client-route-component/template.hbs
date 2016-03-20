@@ -1,0 +1,35 @@
+<h1>Clients</h1>
+{{ui-checkbox label='Display all client records' checked=displayAll}}
+<table class="ui selectable striped celled table">
+  <thead>
+    <tr>
+      <th class="six wide">Name</th>
+      <th class="six wide">Phone</th>
+      <th class="one wide">Cuts</th>
+      <th class="three wide">Last Visit</th>
+      <th class="one wide"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="warning">
+      <td>
+        <div class="ui transparent fluid icon input">
+          {{input type="text" placeholder="Search by name..." value=nameFilter}}
+          <i class="search icon"></i>
+        </div>
+      </td>
+      <td>
+        <div class="ui transparent fluid icon input">
+          {{input type="text" placeholder="Search by phone..." value=phoneFilter}}>
+          <i class="search icon"></i>
+        </div>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    {{#each filteredModel as |client|}}
+      {{clients/client-list-row-component model=client openRecord=(action 'openRecord')}}
+    {{/each}}
+  </tbody>
+</table>
