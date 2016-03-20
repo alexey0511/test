@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/app/pods/haircut/haircut-list-row-component/component.js

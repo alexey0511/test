@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/app/pods/reports/weekly/person/item/route.js

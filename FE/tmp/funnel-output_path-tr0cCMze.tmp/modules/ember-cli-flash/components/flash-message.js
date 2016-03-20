@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/tmp/funnel-input_base_path-Kd66Mu41.tmp/0/components/flash-message.js

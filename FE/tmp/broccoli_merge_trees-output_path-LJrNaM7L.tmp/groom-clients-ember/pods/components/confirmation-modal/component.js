@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/app/pods/components/confirmation-modal/component.js

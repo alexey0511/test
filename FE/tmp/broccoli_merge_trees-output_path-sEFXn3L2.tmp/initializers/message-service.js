@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/app/initializers/message-service.js

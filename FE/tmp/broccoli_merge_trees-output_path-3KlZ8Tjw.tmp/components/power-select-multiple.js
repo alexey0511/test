@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/node_modules/ember-power-select/app/components/power-select-multiple.js

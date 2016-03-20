@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/tmp/funnel-input_base_path-nUNishZ6.tmp/0/authorizers/oauth2-bearer.js

@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/tmp/funnel-input_base_path-2oKfHyOm.tmp/0/fake-owner.js

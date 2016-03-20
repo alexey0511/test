@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/tmp/funnel-input_base_path-YXBecfpi.tmp/0/components/ui-sticky.js

@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/app/pods/clients/client-list-row-component/component.js

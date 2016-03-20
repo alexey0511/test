@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/tmp/funnel-input_base_path-6qfQQdEI.tmp/0/make-promise.js

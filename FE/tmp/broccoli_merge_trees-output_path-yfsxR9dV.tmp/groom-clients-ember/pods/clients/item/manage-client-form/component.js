@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/app/pods/clients/item/manage-client-form/component.js

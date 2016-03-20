@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/tmp/funnel-input_base_path-5n2Hm9MJ.tmp/0/components/app-version.js

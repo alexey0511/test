@@ -1,1 +1,0 @@
-/home/alexey/projects/groomClients-ember/tmp/funnel-input_base_path-qQf8NcKw.tmp/0/components/ember-wormhole.js
