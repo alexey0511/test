@@ -5,8 +5,10 @@ module.exports = function(app) {
   var expressJwt = require('express-jwt');
   var jwt = require('jsonwebtoken');
   var User = require('../models/user');
+  var config         = require('../config.js');
+  env = process.env.NODE_ENV || 'development';
 
-  var secret = "Muniah";
+  var secret = config[env].secret;
 
   tokenRouter.post('/', function(req, res) {
 
