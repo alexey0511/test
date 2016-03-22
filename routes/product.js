@@ -57,7 +57,7 @@ function  _convertProductsToJSONAPI(item) {
     'attributes': {
       'name': item.name,
       'description': item.description,
-      'productType': item.productType,
+      'product-type': item.productType,
       'price': item.price
     }
   };
@@ -67,8 +67,8 @@ function  _convertProductsToJSONAPI(item) {
 function  _convertFromJsonToProduct(item) {
   var product = {
     'name': item.attributes.name,
-    'password': item.attributes.description,
-    'productType': item.attributes.productType,
+    'description': item.attributes.description,
+    'product-type': item.attributes.productType,
     'price': item.attributes.price
   };
   if (item.id) { product.id = item.id; }
